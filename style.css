@@ -1,46 +1,4 @@
-body {
-    background-color: #E0E0E0		;
-}
-
-/* img {
-    float: right;
-    width: 50%; 
-    height: 100%;
-    padding: 0%;
-} */
-
-
-/* img {
-    float: right;
-    max-width:2500px;
-    max-height:1000px;
-    width: auto;
-    height: auto;
-  } */
-
-  /* img {
-    background-image: "Images/credit card image.jpg";
-    background-position: center-top;
-    float: right;
-    width: 50%;
-    height: 100%;
-    margin: 0; padding: 0; border: 0;
-  }
-  .lhs {
-    display: block;
-  }
-
-  .image {
-    display: block;
-  }
-  h2 {
-    text-align: center;
-    text-orientation: sideways;
-  } */
-
-
-
-  body, html {
+body, html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -48,27 +6,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('./Images/credit\ card\ image.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .container {
-    display: flex;
-    width: 80%;
-    max-width: 1000px;
-    margin: auto;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.rhs, .lhs {
+.lhs, .rhs {
     flex: 1;
     padding: 20px;
-}
-
-.rhs img {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
 }
 
 .lhs h2, .lhs h4, .lhs p {
@@ -83,4 +33,14 @@ body {
 
 .lhs input[type="checkbox"] {
     margin-right: 10px;
+}
+
+
+button {
+    background-color: black;
+    color: orange;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 5px;
 }
